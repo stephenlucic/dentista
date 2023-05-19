@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{%block contenido%}
+
+<div class="container mt-5">
+    <div class="text-center">
+      <img src="{% static 'imagenes/contacto_imagen.jpg'%}" alt="Clínica Dental" style="max-width: 600px;">
+    </div>
+    <h2 class="mt-4">Contacto</h2>
+    <form id="formularioContacto">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" class="form-control" id="telefono" required>
+      </div>
+      <div class="form-group">
+          <label for="tipo">Tipo contacto:</label>
+          <select id="tipo" class="form-select">
+            <option value="sugerencia">Sugerencia</option>
+            <option value="reclamo">Reclamo</option>
+          </select>
+       </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+{% endblock %}

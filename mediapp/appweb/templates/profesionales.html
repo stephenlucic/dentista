@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{%block contenido%}
+
+
+
+<div class="container" style="margin-top: 50px">
+    <h2>Nuestros Profesionales</h2>
+    <p>Contamos con un reconocido y experimentado equipo de trabajo, ofreciendo la oportunidad a nuestros pacientes de
+      acceder a avanzados e innovadores tratamientos con un enfoque interdisciplinario, todo en un mismo lugar.</p>
+    <div id="profesionales_excelencia" class="row">
+      <div class="cont-profesionales col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3>Equipo Directivo</h3>
+        <div class="cont-listado row">
+
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="prof int">
+              <figure>
+                <a href="#">
+                  <img width="270" height="350"
+                    src="{% static './imagenes/doctor1.jpg'%}"
+                    class="img-responsive wp-post-image" alt="" decoding="async" loading="lazy"> </a>
+                <h4 class="nombre white">Dr. Sergio Fernandez</h4>
+
+                <span class="cargo" style="display: none;">Director Odontológico</span>
+
+              </figure>
+              <div class="details">
+                <p class="extracto">Director Odontológico. Cirujano Dentista</p>
+                <p class="rrss"></p>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+{% endblock %}
